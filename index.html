@@ -1,0 +1,125 @@
+<html>
+    <head>
+        <script src="/Scripts/registerScript.js"></script>
+    </head>
+    <body>
+        <h1>Fletcher Kassa Tool</h1>
+        <form>
+            <table>
+                <tr>
+                    <th>Munt/Brief</th>
+                    <th>Aantal</th>
+                    <th>Bedrag</th>
+                </tr>
+                <tr>
+                    <td>€500</td>
+                    <td>
+                        <input id="amount500" onchange="calculateAmount(500)" type="number" placeholder="0" value="0">
+                    </td>
+                    <td id="value500">€0</td>
+                </tr>
+                <tr>
+                    <td>€200</td>
+                    <td>
+                        <input id="amount200" onchange="calculateAmount(200)" type="number" placeholder="0" value="0">
+                    </td>
+                    <td id="value200">€0</td>
+                </tr>
+                <tr>
+                    <td>€100</td>
+                    <td>
+                        <input id="amount100" onchange="calculateAmount(100)" type="number" placeholder="0" value="0">
+                    </td>
+                    <td id="value100">€0</td>
+                </tr>
+                <tr>
+                    <td>€50</td>
+                    <td>
+                        <input id="amount50" onchange="calculateAmount(50)" type="number" placeholder="0" value="0">
+                    </td>
+                    <td id="value50">€0</td>
+                </tr>
+                <tr>
+                    <td>€20</td>
+                    <td>
+                        <input id="amount20" onchange="calculateAmount(20)" type="number" placeholder="0" value="0">
+                    </td>
+                    <td id="value20">€0</td>
+                </tr>
+                <tr>
+                    <td>€10</td>
+                    <td>
+                        <input id="amount10" onchange="calculateAmount(10)" type="number" placeholder="0" value="0">
+                    </td>
+                    <td id="value10">€0</td>
+                </tr>
+                <tr>
+                    <td>€5</td>
+                    <td>
+                        <input id="amount5" onchange="calculateAmount(5)" type="number" placeholder="0" value="0">
+                    </td>
+                    <td id="value5">€0</td>
+                </tr>
+                <tr>
+                    <td>€2</td>
+                    <td>
+                        <input id="amount2" onchange="calculateAmount(2)" type="number" placeholder="0" value="0">
+                    </td>
+                    <td id="value2">€0</td>
+                </tr>
+                <tr>
+                    <td>€1</td>
+                    <td>
+                        <input id="amount1" onchange="calculateAmount(1)" type="number" placeholder="0" value="0">
+                    </td>
+                    <td id="value1">€0</td>
+                </tr>
+                <tr>
+                    <td>€0.50</td>
+                    <td>
+                        <input id="amount0.5" onchange="calculateAmount(0.5)" type="number" placeholder="0" value="0">
+                    </td>
+                    <td id="value0.5">€0</td>
+                </tr>
+                <tr>
+                    <td>€0.20</td>
+                    <td>
+                        <input id="amount0.2" onchange="calculateAmount(0.2)" type="number" placeholder="0" value="0">
+                    </td>
+                    <td id="value0.2">€0</td>
+                </tr>
+                <tr>
+                    <td>€0.10</td>
+                    <td>
+                        <input id="amount0.1" onchange="calculateAmount(0.1)" type="number" placeholder="0" value="0">
+                    </td>
+                    <td id="value0.1">€0</td>
+                </tr>
+                <tr>
+                    <td>€0.05</td>
+                    <td>
+                        <input id="amount0.05" onchange="calculateAmount(0.05)" type="number" placeholder="0" value="0">
+                    </td>
+                    <td id="value0.05">€0</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <th>Start</th>
+                    <td>
+                        €<input id="registerStart" onchange="calculateTotal()" type="number" placeholder="0" value="150">
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <th>Totaal</th>
+                    <td id="registerTotal">€0</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <th id="registerBreakTitle">Fooi</th>
+                    <td id="registerBreakValue">€0</td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
