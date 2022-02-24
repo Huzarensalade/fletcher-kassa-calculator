@@ -66,6 +66,7 @@ function calculateAmount(payment) {
     calculateTotal()
 }
 
+/*function to calculate the total value for the register*/
 function calculateTotal() {
     var registerTotal = register.value500 + 
                         register.value200 + 
@@ -92,6 +93,7 @@ function calculateTotal() {
     }
 }
 
+/*function to fix javscript rounding error*/
 function round(num) {
     var m = Number((Math.abs(num) * 100).toPrecision(15));
     return Math.round(m) / 100 * Math.sign(num);
