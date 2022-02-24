@@ -19,7 +19,7 @@ const register = {
 function calculateAmount(payment) {
     var amount = document.getElementById('amount' + payment).value;
     var value = amount * payment;
-    document.getElementById('value' + payment).innerHTML = `€${round(value)}`;
+    document.getElementById('value' + payment).innerHTML = `&#8364;${round(value)}`;
     switch(payment) {
         case 500:
             register.value500 = value;
@@ -81,10 +81,10 @@ function calculateTotal() {
                         register.value020 + 
                         register.value010 + 
                         register.value005;
-    document.getElementById('registerTotal').innerHTML = `€${round(registerTotal)}`;
+    document.getElementById('registerTotal').innerHTML = `&#8364;${round(registerTotal)}`;
     var registerStart = document.getElementById('registerStart').value;
     var registerBreak = registerTotal - registerStart;
-    document.getElementById('registerBreakValue').innerHTML = `€${round(registerBreak)}`;
+    document.getElementById('registerBreakValue').innerHTML = `&#8364;${round(registerBreak)}`;
     if (registerBreak < 0) {
         document.getElementById('registerBreakTitle').innerHTML = 'Tekort';
     }
